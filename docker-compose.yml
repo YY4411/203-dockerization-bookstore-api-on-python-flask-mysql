@@ -11,9 +11,7 @@ services:
     networks:
         - clarusnet
     myapp:
-        image: yildiray4411
-/
-bookstore-api:latest
+        image: yildiray4411/bookstore-api:latest
         restart: always
         depends_on:
             - database
