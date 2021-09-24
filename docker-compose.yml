@@ -11,14 +11,16 @@ services:
     networks:
         - clarusnet
     myapp:
-        image: callahanclarus/bookstore-api:latest
+        image: yildiray4411
+/
+bookstore-api:latest
         restart: always
         depends_on:
             - database
-    ports:
-        - "80:80"
+        ports:
+            - "80:80"
     networks:
         - clarusnet
 networks:
     clarusnet:
-    driver: bridge
+        driver: bridge
