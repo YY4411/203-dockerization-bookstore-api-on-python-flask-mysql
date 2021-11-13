@@ -9,11 +9,11 @@ curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compo
 chmod +x /usr/local/bin/docker-compose
 mkdir -p /home/ec2-user/bookstore-api
 TOKEN="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-FOLDER="https://$TOKEN@raw.githubusercontent.com/clarusway/cw-workshop/dev/devops/projects/202-dockerization-bookstore-api-on-python-flask-mysql/"
+FOLDER="https://$TOKEN@raw.githubusercontent.com/YY4411/203-dockerization-bookstore-api-on-python-flask-mysql/main/"
 curl -s --create-dirs -o "/home/ec2-user/bookstore-api/app.py" -L "$FOLDER"bookstore-api.py
 curl -s --create-dirs -o "/home/ec2-user/bookstore-api/requirements.txt" -L "$FOLDER"requirements.txt
 curl -s --create-dirs -o "/home/ec2-user/bookstore-api/Dockerfile" -L "$FOLDER"Dockerfile
 curl -s --create-dirs -o "/home/ec2-user/bookstore-api/docker-compose.yml" -L "$FOLDER"docker-compose.yml
 cd /home/ec2-user/bookstore-api
-docker build -t callahanclarus/bookstore-api:latest .
+docker build -t yildiray4411/bookstore-api:latest .
 docker-compose up -d
