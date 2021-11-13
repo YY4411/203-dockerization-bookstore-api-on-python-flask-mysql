@@ -6,4 +6,4 @@ EXPOSE 80
 #CMD python ./bookstore-api.py
 #CMD ["python", "app.py"]
 # CMD python bookstore-api.py
-CMD python ./app.py 
+CMD gipython ./app.py 
