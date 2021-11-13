@@ -20,5 +20,5 @@ services:
     networks:
       - furkannet
 networks:
-  clarusnet:
+  furkannet:
     driver: bridge
